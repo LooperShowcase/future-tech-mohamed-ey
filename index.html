@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title> Mohamed-AI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="icon.PNG" type="image/x-icon">
+  </head>
+  <body>
+
+    <h1>Ai for mohamed</h1>
+    <button onclick="speak()" id="init_sound">init audio</button>
+    <div class="container">
+
+      
+    <form onsubmit="
+    event.preventDefault();
+    conversationUserAdd(document.getElementById('input-text').value);
+   openai_test();
+    ">
+      <input type="text" id="input-text" placeholder="search here..." />
+      <button id="submit-button">submit</button>
+    </div>
+    <center><img src="logo.PNG" alt=""></center>
+
+      <div id="chat-container"></div>
+    </form>
+    <center>
+  </center>
+  </body>
+  <script src="script.js"></script>
+</html>
